@@ -67,15 +67,12 @@ The project follows a component-based React structure, with reusable components 
 - Continue refining responsive layouts and accessibility
 - Expand project documentation as projects are completed
 - Add additional technical projects and demonstrations
-- Improve SEO and website discoverability
 
 ## Author
 
 **Eddie Molina**
-
-- University of South Florida — B.S. Cybersecurity
-- [GitHub](https://github.com/YOUR_USERNAME)
-- [LinkedIn](https://www.linkedin.com/in/YOUR_USERNAME)
+- [GitHub](https://github.com/eddiestcc)
+- [LinkedIn](https://www.linkedin.com/in/molina-eddie)
 
 ---
 
