@@ -2,7 +2,7 @@
 
 Personal portfolio website showcasing my background, technical interests, projects, and ongoing development as a cybersecurity student.
 
-**Live Website:** Coming soon
+**Live Website:** [Click Here](https://eddiestcc.github.io/eddiemolina-portfolio/)
 
 ## About
 
