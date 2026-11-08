@@ -1,0 +1,154 @@
+
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+  color: #e5e7eb;
+  background: #030712;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  background: #22c55e;
+  color: #030712;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+
+/* Light theme */
+
+.light {
+  background-color: #f8fafc;
+  color: #111827;
+  min-height: 100vh;
+}
+
+/* Backgrounds */
+
+.light .bg-gray-950,
+.light [class~="bg-gray-950/90"] {
+  background-color: #f8fafc !important;
+}
+
+.light .bg-gray-900,
+.light [class~="bg-gray-900/80"] {
+  background-color: #ffffff !important;
+}
+
+.light .bg-gray-800 {
+  background-color: #f1f5f9 !important;
+}
+
+/* Text */
+
+.light .text-white {
+  color: #111827 !important;
+}
+
+.light .text-gray-100 {
+  color: #1f2937 !important;
+}
+
+.light .text-gray-300 {
+  color: #374151 !important;
+}
+
+.light .text-gray-400 {
+  color: #64748b !important;
+}
+
+.light .text-gray-500 {
+  color: #64748b !important;
+}
+
+/* Borders */
+
+.light .border-gray-800,
+.light .border-gray-700 {
+  border-color: #e2e8f0 !important;
+}
+
+/* Terminal panel */
+
+.light [class~="bg-[#080D16]"] {
+  background-color: #ffffff !important;
+}
+
+/* Keep green accents consistent */
+
+.light .text-green-400 {
+  color: #16a34a !important;
+}
+
+/* Scroll-driven storytelling */
+html {
+  scroll-behavior: smooth;
+}
+
+.story-section {
+  scroll-margin-top: 80px;
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 700ms ease,
+    transform 700ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.scroll-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .scroll-reveal,
+  .scroll-reveal.is-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-16px);
+  }
+}
+
+@keyframes hover {
+  0%, 100% {
+    transform: translateY(0) rotate(-0.5deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(0.5deg);
+  }
+}
