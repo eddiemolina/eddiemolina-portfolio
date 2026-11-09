@@ -36,7 +36,7 @@ function Contact() {
             </a>
             
             <a
-              href="https://github.com/eddiestcc"
+              href="https://github.com/eddiemolina"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 text-gray-300 hover:text-green-400"

@@ -28,7 +28,7 @@ function Hero() {
                   {[
                     {
                       name: "GitHub",
-                      href: "https://github.com/eddiestcc",
+                      href: "https://github.com/eddiemolina",
                     },
                     {
                       name: "LinkedIn",
