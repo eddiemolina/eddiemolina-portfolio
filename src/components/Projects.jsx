@@ -75,7 +75,7 @@ function Projects() {
                     ))}
                   </div>
 
-                  <div className="border-t border-gray-800 mt-6 pt-5">
+                  <div className="flex flex-row justify-around items-center border-t border-gray-800 mt-6 pt-5">
                     {project.github ? (
                       <a
                         href={project.github}
@@ -83,9 +83,29 @@ function Projects() {
                         rel="noreferrer"
                         className="inline-flex items-center gap-2 text-sm text-slate-500 
                         relative inline-block rounded-full px-4 py-2 transition-all 
-                        duration-300 hover:bg-green-500 hover:text-white hover:scale-110"
+                        duration-300 hover:bg-green-500 hover:text-white hover:scale-105"
                       >
                         View Repository
+                        <ArrowUpRight size={15} />
+                      </a>
+                    ) : (
+                      <span className="text-sm text-gray-500">
+                        Repository coming soon
+                      </span>
+                    )}
+
+
+
+                    {project.documentation ? (
+                      <a
+                        href={project.documentation}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-2 text-sm text-slate-500 
+                        relative inline-block rounded-full px-4 py-2 transition-all 
+                        duration-300 hover:bg-green-500 hover:text-white hover:scale-110"
+                      >
+                        View Documentation
                         <ArrowUpRight size={15} />
                       </a>
                     ) : (

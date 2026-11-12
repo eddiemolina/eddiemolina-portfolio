@@ -2,7 +2,30 @@
 import { useState } from 'react'
 import { Menu, X, Sun, Moon } from 'lucide-react'
 
-const links = ['About', 'Projects', 'Skills', 'Contact']
+// const links = ['About', 'Projects', 'Skills', 'Contact', 'Documentation']
+
+const links = [
+  {
+    name: 'About',
+    href: '#about', 
+  },
+  {
+    name: 'Projects',
+    href: '#projects', 
+  },
+  {
+    name: 'Skills',
+    href: '#skills', 
+  },
+  {
+    name: 'Contact',
+    href: '#contact', 
+  },
+  {
+    name: 'Documentation',
+    href: 'https://eddiemolina.github.io/projects/', 
+  },
+]
 
 function Navbar({ darkMode, toggleTheme }) {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -18,11 +41,11 @@ function Navbar({ darkMode, toggleTheme }) {
         <div className="hidden md:flex items-center gap-8">
           {links.map((link) => (
             <a
-              key={link}
-              href={`#${link.toLowerCase()}`}
+              key={link.name}
+              href={`${link.href.toLowerCase()}`}
               className="text-sm text-gray-400 hover:text-green-400 transition"
             >
-              {link}
+              {link.name}
             </a>
           ))}
         </div>
